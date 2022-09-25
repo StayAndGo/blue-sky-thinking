@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, 
+  -scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <div class="flex-col overflow-hidden w-screen h-screen p-4 bg-blue-200">
+    <h1 class="text-2xl text-center">using clip path</h1>
+
+    <div class="flex flex-row h-[calc(100%-50px)]">
+      <!-- video -->
+      <video autoplay muted loop class="w-full h-full" src="http://124.222.215.236/files/bottle.mp4"
+        style="clip-path: url(#text);"
+      ></video>
+      <video autoplay muted loop class="w-full h-full" src="http://124.222.215.236/files/coffee.mp4"
+        style="clip-path: url(#rect);"
+      ></video>
+      <!-- svg -->
+      <div>
+        <!-- text-svg -->
+      <svg version="1.2" viewBox="0 0 740 2000">
+        <defs>
+          <clipPath id="text">
+              <text x="200" y="200" width="800" height="450" textLength="800" font-size="240px">SUMMER
+                <animate attributeType="XML" attributeName="x" from="-50" to="880"
+                  dur="5s" repeatCount="indefinite"
+                />
+              </text>
+              <text x="0" y="500" width="800" height="2000" textLength="800" font-size="240px">SUMMER
+                <animate attributeType="XML" attributeName="x" from="-350" to="550"
+                  dur="5s" repeatCount="indefinite"
+                />
+              </text>
+              <text x="200" y="800" width="800" height="450" textLength="1000" font-size="240px">SUMMER
+                <animate attributeType="XML" attributeName="x" from="-50" to="880"
+                  dur="5s" repeatCount="indefinite"
+                />
+              </text>
+              <text x="0" y="1100" width="800" height="2000" textLength="800" font-size="240px">SUMMER
+                <animate attributeType="XML" attributeName="x" from="-350" to="550"
+                  dur="5s" repeatCount="indefinite"
+                />
+              </text>
+          </clipPath>
+        </defs>
+      </svg>
+
+      <!-- rect-svg -->
+      <svg version="1.2" viewBox="0 0 2000 2000">
+        <defs>
+          <clipPath id="rect">
+            <rect x="0" y="0" width="5000" height="500">
+              <animate attributeType="XML" attributeName="y" from="-350" to="1200"
+                  dur="10s" repeatCount="indefinite"/>
+            </rect>
+          </clipPath>
+        </defs>
+      </svg>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
