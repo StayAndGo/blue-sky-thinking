@@ -1,0 +1,25 @@
+{
+  "name": "blue-sky-thinking",
+  "version": "1.0.0",
+  "description": "随便记录一些小东西",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StayAndGo/blue-sky-thinking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StayAndGo/blue-sky-thinking/issues"
+  },
+  "homepage": "https://github.com/StayAndGo/blue-sky-thinking#readme",
+  "devDependencies": {
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
